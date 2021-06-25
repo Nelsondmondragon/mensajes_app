@@ -15,8 +15,8 @@ public class Menu {
             System.out.println("Aplicacion de mensajes \n" +
                     "1.Crear mensaje.\n" +
                     "2.Listar mensaje.\n" +
-                    "3.Editar mensaje.\n" +
-                    "4.Eliminar mensaje.\n" +
+                    "3.Eliminar mensaje.\n" +
+                    "4.Editar mensaje.\n" +
                     "5.Salir.");
             op = tc.readLine();
             switch (op) {
@@ -24,13 +24,13 @@ public class Menu {
                     MessageService.createMessage();
                     break;
                 case "2":
-                    MessageService.listMessage();
+                    MessageService.readMessage();
                     break;
                 case "3":
-                    MessageService.editMessage();
+                    MessageService.deleteMessage();
                     break;
                 case "4":
-                    MessageService.deleteMessage();
+                    MessageService.editMessage();
                     break;
                 default:
                     break;
